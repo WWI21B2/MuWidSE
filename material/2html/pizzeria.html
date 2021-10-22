@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/transitional.dtd">
+
+<html>
+    <head>
+        <title>Mario's Pizza</title>
+        <!-- <meta charset="ascii"> -->
+        <!-- internes css -->
+        <style> 
+            h1 {color: aliceblue}
+
+            body {
+                background-color: rgb(200,0,0);
+            } 
+
+            .myownclass {
+                    background-color: gold;
+            }
+        </style>
+        <!-- externes css (zum Verwenden erst das interne auskommentieren) -->
+        <!-- <link rel="stylesheet" type="text/css" href="mystyle.css" > -->
+    </head>
+    <body>
+
+        <img 
+        src="https://cdn.pixabay.com/photo/2016/02/19/11/30/pizza-1209748_960_720.jpg" 
+        width="50" 
+        height="90" 
+        alt="bild von pizza"
+        title="pizza" />
+
+        <h1>Speisekarte als Liste</h1>
+        <h2>Pizza</h2>
+        <ol>
+            <li>Pizza Marinara
+                
+            </li>
+            <li>Pizza Salami
+                <ul>
+                    <li>Tomatensoße</li>
+                    <li>Pizzaboden</li>
+                    <li>Salami</li>
+                    <li>Käse</li>
+                 </ul> 
+            </li>
+            <li>Pizza Hawaii
+                <ul>
+                    <li>Tomatensoße</li>
+                    <li>Pizzaboden</li>
+                    <li>Ananaas</li>
+                    <li>Käse</li>
+                 </ul> 
+            </li>
+        </ol>
+
+
+        <h2>Pasta</h2>
+        <h2 id="getraenke">Getränke</h2>
+
+
+        <h1>Speisekarte &#127829;  &#x1F355  🍕</h1>
+
+Wir haben auch Getränke: <a href="#getraenke">hier</a>.
+
+<a href="tel:+490123456734">rufen Sie uns an</a>
+
+
+        <table border="1">
+            <tr>
+                <td colspan="4">Pizza</td>
+            </tr>
+            <tr>
+                <th>Nummer</th>
+                <th>Name</th>
+                <th>Zutaten</th>
+                <th>Preis</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pizza Marinara</td>
+                <td><ul>
+                    <li>Tomatensoße</li>
+                    <li>Pizzaboden</li>
+                 </ul></td>
+                 <td>11€</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pizza Salami</td>
+                <td><ul>
+                    <li>Tomatenso&szlig;e</li>
+                    <li>Pizzaboden</li>
+                    <li>Salami</li>
+                    <li>K&auml;se</li>
+                 </ul></td>
+                 <td>11&euro;</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Pizza Hawaii</td>
+                <td><ul>
+                    <li>Tomatensoße</li>
+                    <li>Pizzaboden</li>
+                    <li>Ananas</li>
+                    <li>Käse</li>
+                 </ul></td>
+                 <td>11€</td>
+            </tr>
+            <tr>
+                <td colspan="4">Getränke</td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>Cola</td>
+                <td></td>
+                 <td rowspan="2">5€</td>
+            </tr>
+            <tr class="myownclass">
+                <td>51</td>
+                <td>Fanta</td>
+                <td></td>
+            </tr>
+        </table>
+
+
+        <h2>Bezahlmöglichkeiten</h2>
+        <ul>
+            <li>Bar</li>
+            <li>   <a href="paypal.com/mario">Paypal</a>   </li>
+            <li>Kreditkarte</li>
+        </ul>
+
+        <!-- feld für name -->
+        <!-- auswahl Personen -->
+
+<hr/>
+
+        Tisch bestellen:
+        <form action="mailto:mario@pizza.com">
+            name: <input name="name" size="30" 
+            maxlength="40" /> <br/>
+            personen: <input type="number" 
+            name="personenzahl" 
+            min=1
+            size="30" 
+            maxlength="40" /> <br>
+            <input type="submit" value="send">
+
+        </form>
+
+    </body>
+</html>
